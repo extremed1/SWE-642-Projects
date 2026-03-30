@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CS Department Survey</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Styles/cssurveystyle.css" />
+    <link rel="icon" href="Images/gmu_edu-icon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <!--Header for the page-->
+    <div class="heading-container">
+      <div class="heading-container__left">
+        <img
+          class="gmu-logoimg"
+          src="Images/George Mason University 2C H.png"
+          alt="George Mason University Logo"
+        />
+      </div>
+      <div class="heading-container__right">
+        <h1 class="heading-container__right--heading">
+          Department of<br />Computer Science
+        </h1>
+      </div>
+    </div>
+
+    <!--Survey Section-->
+    <section id="survey">
+      <div class="survey-container">
+        <div class="survey-heading-container">
+          <h2 class="survey-heading">CS Department Campus Visit Questionnaire</h2>
+        </div>
+        <p class="survey-description">
+          Please take a moment to fill out our survey to give us feedback on
+          your experience on the campus tour.
+        <br/>
+          <span class="required-note">
+            <span class="required-asterisk">*</span> indicates a required field.
+          </span>
+        </p>
+
+        <!--Form-->
+        <form method="post" autocomplete="on">
+          <!--Contact Information-->
+          <div class="contact-info-container">
+            <div class="box contact-info-container__heading">
+              <h3 class="contact-info-heading">Contact Information</h3>
+            </div>
+
+            <!--Name -->
+            <label>
+              <p class="required-field">First & Last Name:</p>
+              <input type="text" id="fullName" placeholder="Jane Doe" required autofocus />
+            </label>
+
+            <!--Email -->
+            <label>
+              <p class="required-field">Email Address:</p>
+              <input
+                type="email"
+                id="email"
+                placeholder="email@example.com"
+                required
+              />
+            </label>
+
+            <!--Personal Website-->
+            <label>
+              <p class="required-field">School Website:</p>
+              <input type="url" id="website" placeholder="https://example.com" />
+            </label>
+
+
+            <!--Phone Number -->
+            <label>
+              <p class="nonrequired-field">Phone Number:</p>
+              <input type="tel" id="phoneNumber" placeholder="xxx-xxx-xxxx" />
+            </label>
+
+            <!--Address-->
+            <label>
+              <p class="nonrequired-field">Address:</p>
+              <input type="text" id="address" placeholder="123 Main Street" />
+            </label>
+
+            <!--City-->
+
+            <label>
+              <p class="nonrequired-field">City:</p>
+              <input type="text" id="city" placeholder="Fairfax" />
+            </label>
+
+            <!--State-->
+            <label>
+              <p class="nonrequired-field">State:</p>
+              <input type="text" id="state" placeholder="Virginia" />
+            </label>
+
+            <!--Zip Code-->
+            <label>
+              <p class="nonrequired-field">Zip Code:</p>
+              <input type="text" id="zipCode" placeholder="12345" />
+            </label>
+
+            <!--Graduation Month-->
+            <label>
+              <p class="required-field">Graduation Month:</p>
+              <input
+                type="month"
+                id="graduationMonthList"
+                placeholder="Select a month"
+                list="months"
+                required
+              />
+              <datalist id="months">
+                <option value="January"></option>
+                <option value="February"></option>
+                <option value="March"></option>
+                <option value="April"></option>
+                <option value="May"></option>
+                <option value="June"></option>
+                <option value="July"></option>
+                <option value="August"></option>
+                <option value="September"></option>
+                <option value="October"></option>
+                <option value="November"></option>
+                <option value="December"></option>
+              </datalist>
+            </label>
+
+            <!--Graduation Year-->
+            <label>
+              <p class="required-field">Graduation Year:</p>
+              <input
+                type="text"
+                id="graduationYear"
+                placeholder="2026"
+                required
+              />
+            </label>
+
+            <!--Date -->
+            <label>
+              <p class="required-field">Today's Date:</p>
+              <input type="date" id="date" required />
+            </label>
+          </div>
+
+          <!--Survey Questions Section-->
+          <div class="survey-questions-container">
+            <div class="box survey-questions-container__heading">
+              <h3 class="survey-questions-heading">Survey Questions</h3>
+            </div>
+
+            <!--Questions-->
+
+            <!--Question 1-->
+            <div class="survey-question-item">
+              <p class="survey-question-text required-field">
+                Were you satisfied with your campus visit?
+              </p>
+              <label>
+                <input type="radio" name="satisfaction" value="yes" required />
+                Yes
+              </label>
+              <label>
+                <input type="radio" name="satisfaction" value="no" required />
+                No
+              </label>
+            </div>
+
+            <!--Question 2-->
+            <div class="survey-question-item">
+              <p class="survey-question-text required-field">
+                What did you like like the most about campus?
+              </p>
+              <label>
+                <input
+                  type="checkbox"
+                  name="campusInterest"
+                  value="Students"
+                  required
+                />
+                Students
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="campusInterest"
+                  value="Location"
+                  required
+                />
+                Location
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="campusInterest"
+                  value="Campus"
+                  required
+                />
+                Campus
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="campusInterest"
+                  value="Atmosphere"
+                  required
+                />
+                Atmosphere
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="campusInterest"
+                  value="Dorm Rooms"
+                  required
+                />
+                Dorm Rooms
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="campusInterest"
+                  value="Sports"
+                  required
+                />
+                Sports
+              </label>
+            </div>
+
+            <!--Question 3-->
+            <div class="survey-question-item">
+              <p class="survey-question-text required-field">
+                How did you become interested in the university?
+              </p>
+              <label>
+                <input
+                  type="radio"
+                  name="interestSource"
+                  value="Family/Friends"
+                  required
+                />
+                Family/Friends
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="interestSource"
+                  value="Television"
+                  required
+                />
+                Television
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="interestSource"
+                  value="Social Media"
+                  required
+                />
+                Social Media
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="interestSource"
+                  value="Other"
+                  required
+                />
+                Other
+              </label>
+            </div>
+
+            <!--Question 4-->
+            <div class="survey-question-item">
+              <p class="survey-question-text required-field">
+                Was your campus visit informative?
+              </p>
+              <label>
+                <input type="radio" name="informative" value="yes" required />
+                Yes
+              </label>
+              <label>
+                <input type="radio" name="informative" value="no" required />
+                No
+              </label>
+            </div>
+
+            <!--Question 5-->
+            <div class="survey-question-item">
+              <p class="survey-question-text required-field">
+                How was your campus tour experience?
+              </p>
+              <label>
+                <input
+                  type="radio"
+                  name="tourExperience"
+                  value="Excellent"
+                  required
+                />
+                Excellent
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="tourExperience"
+                  value="Good"
+                  required
+                />
+                Good
+              </label>
+              <label>
+                <input type="radio" name="tourExperience" value="OK" required />
+                OK
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="tourExperience"
+                  value="Poor"
+                  required
+                />
+                Poor
+              </label>
+            </div>
+
+            <!--Question 6-->
+            <div class="survey-question-item">
+              <p class="survey-question-text required-field">
+                Did your campus visit increase your interest in George Mason
+                University?
+              </p>
+              <label>
+                <input
+                  type="radio"
+                  name="interestIncrease"
+                  value="yes"
+                  required
+                />
+                Yes
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="interestIncrease"
+                  value="no"
+                  required
+                />
+                No
+              </label>
+            </div>
+
+            <!--Question 7-->
+            <div class="survey-question-item">
+              <p class="survey-question-text required-field">
+                How likely are you to recommend this school to other prospective
+                students?
+              </p>
+              <select name="recommendationLikelihood" required>
+                <option value="likelyhood" disabled selected>
+                  Select an option
+                </option>
+                <option value="Very Likely">Very Likely</option>
+                <option value="Likely">Likely</option>
+                <option value="Unlikely">Unlikely</option>
+              </select>
+            </div>
+
+            <!--Question 8-->
+            <div class="survey-question-item">
+              <p class="survey-question-text required-field">
+                Do you have any additional comments or feedback about your
+                campus visit? If you have no additional comments, please enter "N/A".
+              </p>
+              <textarea class="survey-textarea"
+                name="additionalComments"
+                id="additionalComments"
+                placeholder="Enter your comments here..."
+                required
+              ></textarea>
+          </div>
+
+          <!--Submit Button-->
+          <button type="submit" class="submit-button">Submit</button>
+
+        </form>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <p class="footer__text">
+        &copy; Danielle Moore 2026 | Computer Science Department Survey
+        (Homework) | Logo provided by George Mason University | Questions inspired by Delgado Community College Campus Visit Questionnaire
+      </p>
+    </footer>
+  </body>
+</html>
